@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gestão dinâmica de memória – conceitos</title><link rel="stylesheet" href="css/estilo.css"></head><body data-id="26"><header><img src="img/logo.svg" alt=""><b>Programação C/C++</b></header><main><p><a href="index.html">← Índice</a></p><h1>26. Gestão dinâmica de memória – conceitos</h1><div class="card"><h2>Conteúdos para estudo</h2><p>Com <code>new</code> reserva-se memória durante a execução; com <code>delete</code> liberta-se. Para vetores: <code>new[]</code> e <code>delete[]</code>.</p><pre>int *p = new int;
+*p = 5;
+delete p;
+
+int n = 4;
+int *v = new int[n];
+for (int i = 0; i &lt; n; i++) v[i] = i * 2;
+delete[] v;</pre><p>Memória reservada e nunca libertada causa <b>fugas de memória</b>.</p></div><div class="card act"><h2>Atividade 26 – “new e delete”</h2><p>Explore new e delete em C++ e compreenda a utilização responsável da memória.</p><div class="q" data-l="Código – vetor dinâmico de tamanho lido"><label>Código – vetor dinâmico de tamanho lido</label><textarea data-k="26:0" class=code spellcheck=false></textarea></div><div class="q" data-l="Libertei a memória com delete[]"><label><input type="checkbox" data-k="26:1">Libertei a memória com delete[]</label></div><div class="q" data-l="O que é uma fuga de memória e como evitá-la?"><label>O que é uma fuga de memória e como evitá-la?</label><textarea data-k="26:2"></textarea></div><p class="st" id="msg">Os dados são guardados automaticamente neste navegador.</p></div><nav><a href="tema25.html">← Anterior</a><a href="tema27.html">Seguinte →</a></nav></main><script src="js/manual.js"></script></body></html>

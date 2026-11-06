@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Consolidação: condicionais e ciclos</title><link rel="stylesheet" href="css/estilo.css"></head><body data-id="13"><header><img src="img/logo.svg" alt=""><b>Programação C/C++</b></header><main><p><a href="index.html">← Índice</a></p><h1>13. Consolidação: condicionais e ciclos</h1><div class="card"><h2>Conteúdos para estudo</h2><p>Combine as estruturas aprendidas. Para números aleatórios use <code>rand()</code> com <code>srand(time(0))</code>.</p><pre>#include &lt;cstdlib&gt;
+#include &lt;ctime&gt;
+srand(time(0));
+int secreto = rand() % 100 + 1;   // 1 a 100
+int palpite, tent = 0;
+do {
+    cin &gt;&gt; palpite; tent++;
+    if (palpite &lt; secreto) cout &lt;&lt; &quot;Maior&quot;;
+    else if (palpite &gt; secreto) cout &lt;&lt; &quot;Menor&quot;;
+} while (palpite != secreto);</pre></div><div class="card act"><h2>Atividade 13 – “Desafios de consolidação”</h2><p>Desafios: número secreto, contador, cálculo de médias e validação de opções.</p><div class="q" data-l="Código – número secreto"><label>Código – número secreto</label><textarea data-k="13:0" class=code spellcheck=false></textarea></div><div class="q" data-l="Código – contador e média de notas"><label>Código – contador e média de notas</label><textarea data-k="13:1" class=code spellcheck=false></textarea></div><div class="q" data-l="Código – validação de opção de menu"><label>Código – validação de opção de menu</label><textarea data-k="13:2" class=code spellcheck=false></textarea></div><div class="q" data-l="Dificuldades e como as resolveu"><label>Dificuldades e como as resolveu</label><textarea data-k="13:3"></textarea></div><p class="st" id="msg">Os dados são guardados automaticamente neste navegador.</p></div><nav><a href="tema12.html">← Anterior</a><a href="tema14.html">Seguinte →</a></nav></main><script src="js/manual.js"></script></body></html>

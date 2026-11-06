@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ficheiros: leitura e escrita de dados</title><link rel="stylesheet" href="css/estilo.css"></head><body data-id="27"><header><img src="img/logo.svg" alt=""><b>Programação C/C++</b></header><main><p><a href="index.html">← Índice</a></p><h1>27. Ficheiros: leitura e escrita de dados</h1><div class="card"><h2>Conteúdos para estudo</h2><p>Com <code>&lt;fstream&gt;</code>: <code>ofstream</code> escreve e <code>ifstream</code> lê ficheiros de texto.</p><pre>#include &lt;fstream&gt;
+ofstream out(&quot;dados.txt&quot;);
+out &lt;&lt; &quot;Ana 16&quot; &lt;&lt; endl;
+out.close();
+
+ifstream in(&quot;dados.txt&quot;);
+string nome; int nota;
+while (in &gt;&gt; nome &gt;&gt; nota) cout &lt;&lt; nome &lt;&lt; nota;
+in.close();</pre><p>Verifique se o ficheiro abriu: <code>if (!in) ...</code>.</p></div><div class="card act"><h2>Atividade 27 – “Criar, guardar e recuperar”</h2><p>Crie ficheiros de texto e guarde e recupere informação com ofstream e ifstream.</p><div class="q" data-l="Código – escrever dados num ficheiro"><label>Código – escrever dados num ficheiro</label><textarea data-k="27:0" class=code spellcheck=false></textarea></div><div class="q" data-l="Código – ler e mostrar os dados"><label>Código – ler e mostrar os dados</label><textarea data-k="27:1" class=code spellcheck=false></textarea></div><div class="q" data-l="O ficheiro foi criado na pasta do programa"><label><input type="checkbox" data-k="27:2">O ficheiro foi criado na pasta do programa</label></div><p class="st" id="msg">Os dados são guardados automaticamente neste navegador.</p></div><nav><a href="tema26.html">← Anterior</a><a href="tema28.html">Seguinte →</a></nav></main><script src="js/manual.js"></script></body></html>

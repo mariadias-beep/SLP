@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Desenvolvimento de menus e aplicações de consola</title><link rel="stylesheet" href="css/estilo.css"></head><body data-id="31"><header><img src="img/logo.svg" alt=""><b>Programação C/C++</b></header><main><p><a href="index.html">← Índice</a></p><h1>31. Desenvolvimento de menus e aplicações de consola</h1><div class="card"><h2>Conteúdos para estudo</h2><p>Uma aplicação de consola típica repete um <b>menu</b> até o utilizador sair, usando <code>do while</code>, <code>switch</code> e funções.</p><pre>int op;
+do {
+    cout &lt;&lt; &quot;1-Adicionar 2-Listar 0-Sair: &quot;;
+    cin &gt;&gt; op;
+    switch (op) {
+      case 1: adicionar(); break;
+      case 2: listar(); break;
+    }
+} while (op != 0);</pre></div><div class="card act"><h2>Atividade 31 – “Sistema de menu”</h2><p>Crie um sistema de menu com várias funcionalidades usando switch, ciclos e funções.</p><div class="q" data-l="Código – menu com pelo menos 3 funcionalidades"><label>Código – menu com pelo menos 3 funcionalidades</label><textarea data-k="31:0" class=code spellcheck=false></textarea></div><div class="q" data-l="Opção inválida tratada"><label><input type="checkbox" data-k="31:1">Opção inválida tratada</label></div><div class="q" data-l="Opção de saída funciona"><label><input type="checkbox" data-k="31:2">Opção de saída funciona</label></div><p class="st" id="msg">Os dados são guardados automaticamente neste navegador.</p></div><nav><a href="tema30.html">← Anterior</a><a href="tema32.html">Seguinte →</a></nav></main><script src="js/manual.js"></script></body></html>
